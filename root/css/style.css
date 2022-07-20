@@ -5,6 +5,7 @@
     --tag-grey: #BFBFBF;
     --tiny-grey: #EEEAEA;
     --just-white: #fff;
+    --blur: rgba(10,12,16,0.74);
     --roboto: 'Roboto', sans-serif;
 }
 
@@ -17,4 +18,92 @@
 html {
     font-size: 62.5%;
     font-family: 'Oxygen', sans-serif;
+}
+
+body{
+    background-color: var(--tiny-grey);
+    color: var(--almost-black);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+ }
+
+header {
+    display: inline-grid;
+    width: 100vw;
+    height: 80px;
+}
+
+header .header__navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 60px;
+    /* max-width: 1200px; */
+    height: auto;
+}
+
+.header__navbar .header__navbar-title {
+    font-size: 2rem;
+    font-style: normal;
+    line-height: 40px;
+}
+
+header nav .header__navbar-sections {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav .header__navbar-sections li a {
+    color: initial;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-left: 60px;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main__container-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 426px;
+    width: 100%;
+    margin: auto 60px;
+    background-color: antiquewhite;
+}
+
+main .main__section-info {
+    width: 50%;
+    padding: 0 10px;
+}
+
+main .main__section-info h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.4rem;
+    line-height: 8rem;
+}
+
+main .main__section-info p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 3rem;
+}
+
+
+.main__footer {
+    height: 140px;
+    width: 100%;
+    background-color: var(--almost-black);
+    /* position: absolute; */
+    bottom: 0;
 }
