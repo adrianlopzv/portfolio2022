@@ -98,7 +98,6 @@ ul li .navbar__section-effect:hover::before {
     height: 425px;
     width: 100%;
     margin: auto 60px;
-    background-color: antiquewhite;
 }
 
 main .main__section-info {
@@ -122,7 +121,7 @@ main .main__section-info p {
 }
 
 .main__section-info button {
-    margin-top: 55px;
+    margin-top: 60px;
     padding: 15px 20px;
     background: var(--almost-black);
     outline: none !important;
@@ -164,11 +163,67 @@ main .main__section-info p {
     height: 100%;
   }
 
-
 .main__footer {
-    height: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
     width: 100%;
     background-color: var(--almost-black);
     /* position: absolute; */
     bottom: 0;
+    padding: 0 60px;
 }
+
+.main__footer a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--tiny-grey);
+    font-family: var(--roboto);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.1em;
+}
+
+.main__footer a:hover{
+    color: var(--great-yellow);
+}
+
+.footer__icon-container {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.footer__icon-container span {
+    display: inline-block;
+    width: 25px; height: 25px;
+    margin-left: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.linkedin {
+    background-image: url('/root/assets/linkedin_icon_white.png');
+}
+
+.github {
+    background-image: url('/root/assets/GitHub_icon_white.png');
+}
+
+.instagram {
+    background-image: url('/root/assets/Instagram_icon_white.png');
+}
+
+/* pa la proxima section 
+
+.clearfix {
+    overflow: hidden;
+
+    
+}*/
