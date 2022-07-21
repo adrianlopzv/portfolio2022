@@ -29,6 +29,10 @@ body{
     /* min-height: 100vh; */
  }
 
+ ::-webkit-scrollbar {
+    display: none;
+}
+
 header {
     display: inline-grid;
     width: 100vw;
@@ -66,15 +70,32 @@ nav .header__navbar-sections li a {
     text-decoration: none;
 }
 
-::-webkit-scrollbar {
-    display: none;
+ul li .navbar__section-effect {
+    display: inline-block;
+    padding-bottom: 0.25rem; /* defines the space between text and underline */
+    position: relative;
+}
+
+ul li .navbar__section-effect::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--almost-black);
+    transition: width 0.20s ease-out;
+}
+
+ul li .navbar__section-effect:hover::before {
+    width: 100%;
 }
 
 .main__container-home {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 426px;
+    height: 425px;
     width: 100%;
     margin: auto 60px;
     background-color: antiquewhite;
@@ -88,8 +109,9 @@ main .main__section-info {
 main .main__section-info h1 {
     font-style: normal;
     font-weight: 700;
-    font-size: 5.4rem;
-    line-height: 8rem;
+    font-size: 5.5rem;
+    line-height: 7rem;
+    margin: 10px 0;
 }
 
 main .main__section-info p {
@@ -98,6 +120,49 @@ main .main__section-info p {
     font-size: 2.2rem;
     line-height: 3rem;
 }
+
+.main__section-info button {
+    margin-top: 55px;
+    padding: 15px 20px;
+    background: var(--almost-black);
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: var(--roboto);
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  
+  .section-button {
+    border: none;
+    z-index: 1;
+    color: white;
+  }
+  
+  .section-button:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: var(--great-yellow);
+    transition: all 0.3s ease;
+  }
+  
+  .section-button:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .section-button:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
 
 
 .main__footer {
