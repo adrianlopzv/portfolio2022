@@ -1,5 +1,5 @@
 :root {
-    --great-yellow: #F4FD6B;
+    --great-yellow: #f4fd6b;
     --almost-black: #16161D;
     --dark-grey: #A0A0A0;
     --tag-grey: #BFBFBF;
@@ -72,7 +72,7 @@ nav .header__navbar-sections li a {
 
 ul li .navbar__section-effect {
     display: inline-block;
-    padding-bottom: 0.25rem; /* defines the space between text and underline */
+    padding-bottom: 0.25rem;
     position: relative;
 }
 
@@ -93,16 +93,22 @@ ul li .navbar__section-effect:hover::before {
 
 .main__container-home {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 425px;
+    flex-direction: row;
+    height: 450px;
     width: 100%;
     margin: auto 60px;
+    /* background-color: cadetblue; */
 }
 
 main .main__section-info {
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
     width: 50%;
-    padding: 0 10px;
+    height: 100%;
+    padding: 70px 0 0 60px;
+    /* border: solid red 1px; */
+    /* background-color: aqua; */
 }
 
 main .main__section-info h1 {
@@ -138,7 +144,7 @@ main .main__section-info p {
   .section-button {
     border: none;
     z-index: 1;
-    color: white;
+    color: var(--tiny-grey);
   }
   
   .section-button:after {
@@ -154,7 +160,7 @@ main .main__section-info p {
   }
   
   .section-button:hover {
-    color: rgb(0, 0, 0);
+    color: var(--almost-black);
   }
   
   .section-button:hover:after {
@@ -163,12 +169,42 @@ main .main__section-info p {
     height: 100%;
   }
 
+  main .main__section-bigphoto {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    width: 50%;
+    /* background-color: burlywood; */
+  }
+
+
+  .main__section-bigphoto img {
+    width: 480px; height: 480px;
+    position: absolute;
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+
+  .section-blurcircle {
+    position: relative;
+    margin-top: 70px;
+    transform: translate(-15%, 0%);
+    width: 600px;
+    height: 500px;
+    border-radius: 60% 25% 40% 80%;  
+    filter: blur(40px);
+    background: radial-gradient(circle at 50% 50%,rgb(245, 255, 105), rgba(76, 0, 255, 0));
+    opacity: 1.2;
+}
+
 .main__footer {
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 130px;
+    height: 100px;
     width: 100%;
     background-color: var(--almost-black);
     /* position: absolute; */
@@ -227,3 +263,9 @@ main .main__section-info p {
 
     
 }*/
+
+@media screen and (max-width: 1200px) {
+    .main__container-home {
+        margin: 0;
+    }
+}
