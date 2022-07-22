@@ -37,7 +37,8 @@ nav {
     display: inline-grid;
     width: 100vw;
     height: 10vh;
-    /* position: fixed; */
+    position: fixed;
+    z-index: 10;
     /* background-color: aquamarine; */
 }
 
@@ -106,9 +107,10 @@ header .header__section-info {
     display: flex;
     flex-direction:column;
     align-items:flex-start;
+    justify-content: center;
     width: 50%;
     height: 100%;
-    padding-top: 120px;
+    padding-top: 60px;
     padding-left: 100px;
     /* border: solid red 1px; */
     /* background-color: aqua; */
@@ -176,7 +178,7 @@ header .header__section-info p {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items:center;
+    align-items:flex-end;
     width: 50%;
     /* background-color: burlywood; */
   }
@@ -191,8 +193,8 @@ header .header__section-info p {
 
   .section-blurcircle {
     position: relative;
-    margin-top: 70px;
-    transform: translate(-15%, 0%);
+    /* margin-top: 120px; */
+    transform: translate(-15%, 12%);
     width: 650px;
     height: 550px;
     border-radius: 60% 25% 40% 80%;  
@@ -270,5 +272,11 @@ header .header__section-info p {
     header .header__section-info {
         padding-top: 80px;
         padding-left: 60px;
+    } 
+    .header__section-bigphoto img {
+        width: 450px; height: 450px;
+    }  
+    .section-blurcircle {
+        width: 600px; height: 500px;
     }
 }
