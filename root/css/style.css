@@ -3,7 +3,7 @@
     --almost-black: #16161D;
     --dark-grey: #A0A0A0;
     --tag-grey: #BFBFBF;
-    --tiny-grey: #EEEAEA;
+    --tiny-grey: #eeeaea;
     --just-white: #fff;
     --blur: rgba(10,12,16,0.74);
     --roboto: 'Roboto', sans-serif;
@@ -39,7 +39,26 @@ nav {
     height: 10vh;
     position: fixed;
     z-index: 10;
-    /* background-color: aquamarine; */
+    transition: 200ms ease-in-out;
+    background-color: rgb(238, 234, 234, 0.74);
+}
+
+.change-navbar {
+    background-color: var(--almost-black);
+    height: 8vh;
+}
+
+.change-navbar .nav__navbar .nav__navbar-title {
+    color: var(--tiny-grey);
+    font-size: 1.8rem;
+}
+
+.change-navbar .nav__navbar .nav__navbar-sections li a {
+    color: var(--tiny-grey);
+}
+
+.change-navbar div ul li .navbar__section-effect::before {
+    background-color: var(--tiny-grey);
 }
 
 nav .nav__navbar {
@@ -48,7 +67,6 @@ nav .nav__navbar {
     align-items: center;
     justify-content: space-between;
     margin: auto 60px;
-    /* max-width: 1200px; */
     height: auto;
 }
 
@@ -93,6 +111,9 @@ ul li .navbar__section-effect::before {
 ul li .navbar__section-effect:hover::before {
     width: 100%;
 }
+
+
+/* HOME - HEADER  */
 
 .header__container-home {
     display: flex;
@@ -267,6 +288,20 @@ header .header__section-info p {
 
     
 }*/
+
+
+/* SECTION ABOUT */
+.another-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.another-section h1 {
+    font-size: 3rem;
+}
+
 
 @media screen and (max-width: 1200px) {
     header .header__section-info {
