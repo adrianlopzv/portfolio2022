@@ -33,13 +33,15 @@ body{
     display: none;
 }
 
-header {
+nav {
     display: inline-grid;
     width: 100vw;
-    height: 80px;
+    height: 10vh;
+    /* position: fixed; */
+    /* background-color: aquamarine; */
 }
 
-header .header__navbar {
+nav .nav__navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -49,20 +51,20 @@ header .header__navbar {
     height: auto;
 }
 
-.header__navbar .header__navbar-title {
+.nav__navbar .nav__navbar-title {
     font-size: 2rem;
     font-style: normal;
     line-height: 40px;
 }
 
-header nav .header__navbar-sections {
+nav div .nav__navbar-sections {
     display: flex;
     flex-direction: row;
     list-style: none;
     text-decoration: none;
 }
 
-nav .header__navbar-sections li a {
+nav .nav__navbar-sections li a {
     color: initial;
     font-size: 1.4rem;
     font-weight: 700;
@@ -91,7 +93,7 @@ ul li .navbar__section-effect:hover::before {
     width: 100%;
 }
 
-.main__container-home {
+.header__container-home {
     display: flex;
     flex-direction: row;
     height: calc(100vh - 80px);
@@ -100,7 +102,7 @@ ul li .navbar__section-effect:hover::before {
     /* background-color: cadetblue; */
 }
 
-main .main__section-info {
+header .header__section-info {
     display: flex;
     flex-direction:column;
     align-items:flex-start;
@@ -112,7 +114,7 @@ main .main__section-info {
     /* background-color: aqua; */
 }
 
-main .main__section-info h1 {
+header .header__section-info h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 5.5rem;
@@ -120,14 +122,14 @@ main .main__section-info h1 {
     margin: 10px 0;
 }
 
-main .main__section-info p {
+header .header__section-info p {
     font-style: normal;
     font-weight: 400;
     font-size: 2.2rem;
     line-height: 3rem;
 }
 
-.main__section-info button {
+.header__section-info button {
     margin-top: 60px;
     padding: 15px 20px;
     background: var(--almost-black);
@@ -170,7 +172,7 @@ main .main__section-info p {
     height: 100%;
   }
 
-  main .main__section-bigphoto {
+  header .header__section-bigphoto {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -180,7 +182,7 @@ main .main__section-info p {
   }
 
 
-  .main__section-bigphoto img {
+  .header__section-bigphoto img {
     width: 490px; height: 490px;
     position: absolute;
     padding: 0 10px;
@@ -199,7 +201,7 @@ main .main__section-info p {
     opacity: 1.2;
 }
 
-.main__footer {
+.header__footer {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -212,7 +214,7 @@ main .main__section-info p {
     padding: 0 60px;
 }
 
-.main__footer a {
+.header__footer a {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--tiny-grey);
@@ -224,7 +226,7 @@ main .main__section-info p {
     letter-spacing: 0.1em;
 }
 
-.main__footer a:hover{
+.header__footer a:hover{
     color: var(--great-yellow);
 }
 
@@ -265,7 +267,7 @@ main .main__section-info p {
 }*/
 
 @media screen and (max-width: 1200px) {
-    main .main__section-info {
+    header .header__section-info {
         padding-top: 80px;
         padding-left: 60px;
     }
