@@ -39,7 +39,7 @@ nav {
     height: 10vh;
     position: fixed;
     z-index: 10;
-    transition: 200ms ease-in-out;
+    transition: 150ms ease-in-out;
     background-color: rgb(238, 234, 234, 0.74);
 }
 
@@ -74,6 +74,11 @@ nav .nav__navbar {
     font-size: 2rem;
     font-style: normal;
     line-height: 40px;
+}
+
+.nav__navbar .nav__navbar-title a {
+    text-decoration: none;
+    color: inherit;
 }
 
 nav div .nav__navbar-sections {
@@ -214,7 +219,6 @@ header .header__section-info p {
 
   .section-blurcircle {
     position: relative;
-    /* margin-top: 120px; */
     transform: translate(-15%, 12%);
     width: 650px;
     height: 550px;
@@ -222,6 +226,7 @@ header .header__section-info p {
     filter: blur(40px);
     background: radial-gradient(circle at 50% 50%,rgb(245, 255, 105), rgba(76, 0, 255, 0));
     opacity: 1.2;
+    z-index: -1;
 }
 
 .header__footer {
@@ -291,6 +296,51 @@ header .header__section-info p {
 
 
 /* SECTION ABOUT */
+.about__section {
+    min-height: 100vh;
+    background-color: var(--almost-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__section .about__container-info {
+    height: 60vh;
+    margin: auto 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.about__container-left {
+    width: 58%;
+    padding-left: 60px;
+}
+
+.about__container-left h1{
+    color: var(--tiny-grey);
+    font-size: 5.2rem;
+}
+
+.about__container-left h2 {
+    color: var(--dark-grey);
+    font-size: 4.8rem;
+}
+
+.about__container-right {
+    width: 45%;
+    font-size: 1.6rem;
+    padding: 0 60px 0 50px;
+}
+
+.about__container-right p{
+    color: var(--tiny-grey);
+    margin-top: 20px;
+}
+
+/* SECTION PROJECTS */
+
 .another-section {
     min-height: 100vh;
     display: flex;
@@ -313,5 +363,18 @@ header .header__section-info p {
     }  
     .section-blurcircle {
         width: 600px; height: 500px;
+    }
+    .about__container-left {
+        padding-left: 30px;
+    }
+    .about__container-right {
+        font-size: 1.5rem;
+        padding: 0 50px 0 60px;
+    }
+    .about__container-left h1{
+        font-size: 5rem;
+    }
+    .about__container-left h2 {
+        font-size: 4.4rem;
     }
 }
