@@ -355,14 +355,53 @@ header .header__section-info p {
 
 /* SECTION PROJECTS */
 
-.another-section {
-    min-height: 100vh;
+.projects__section {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 50px 60px 20px 60px;
     background-color: var(--tiny-grey);
     z-index: 1;
 }
+
+.projects__section-title {
+    display: flex;
+    justify-content: left;
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 60px;
+    padding-right: 15px;
+}
+
+.projects__section-title h1 {
+    color: var(--almost-black);
+    font-size: 5.2rem
+}
+
+.projects__section-container {
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects__section-container article {
+    width: 300px;
+    height: 390px;
+    margin: 0 20px;
+    margin-top: 40px;
+    background-color: var(--just-white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* 380m470 */
+
+
+
+/* //////// */
 
 .another-section h1 {
     font-size: 3rem;
