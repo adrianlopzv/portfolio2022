@@ -300,11 +300,13 @@ header .header__section-info p {
     min-height: 100vh;
     background-color: var(--almost-black);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .about__section .about__container-info {
+    position: absolute;
     height: 60vh;
     margin: auto 60px;
     display: flex;
@@ -339,6 +341,18 @@ header .header__section-info p {
     margin-top: 20px;
 }
 
+.section-blurcircle--about{
+    position: relative;
+    transform: translate(-20%, 90%);
+    width: 480px;
+    height: 400px;
+    border-radius: 60% 25% 40% 80%;  
+    filter: blur(40px);
+    background: radial-gradient(circle at 50% 50%,rgb(245, 255, 105), rgba(76, 0, 255, 0));
+    opacity: 0.9;
+    z-index: 0;
+}
+
 /* SECTION PROJECTS */
 
 .another-section {
@@ -346,11 +360,14 @@ header .header__section-info p {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--tiny-grey);
+    z-index: 1;
 }
 
 .another-section h1 {
     font-size: 3rem;
 }
+
 
 
 @media screen and (max-width: 1200px) {
