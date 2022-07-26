@@ -275,15 +275,15 @@ header .header__section-info p {
 
 
 .linkedin {
-    background-image: url('/assets/linkedin_icon_white.png');
+    background-image: url('../assets/linkedin_icon_white.png');
 }
 
 .github {
-    background-image: url('/assets/gitHub_icon_white.png');
+    background-image: url('../assets/gitHub_icon_white.png');
 }
 
 .instagram {
-    background-image: url('/assets/instagram_icon_white.png');
+    background-image: url('../assets/instagram_icon_white.png');
 }
 
 /* pa la proxima section 
