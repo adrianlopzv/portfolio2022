@@ -417,6 +417,7 @@ article .section__container-img {
     background-size: cover;
 }
 
+
 .section__container-img:hover img {
     opacity: 0.5;
 }
@@ -505,15 +506,42 @@ article .section__container-img {
     color: var(--great-yellow);
 }
 
-
 .projects__section-container article>h4 {
     font-size: 2.4rem;
     font-weight: 700;
     font-style: normal;
     line-height: 4rem;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 10px;
+    align-self: flex-start;
 }
+
+/* REVISAR ALTOS DE IMG PORQUE ME EMPUJA EL CONTENIDOOOOO */
+
+.projects__section-tags {
+    width: 90%;
+    height: 15%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.projects__section-tags div {
+    width: auto;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding: 4px 10px;
+    border-radius: 30px;
+    font-size: small;
+    background-color: var(--tag-grey);
+    color: var(--just-white);
+    font-weight: 500;
+    font-family: var(--roboto);
+ }
 
 
 /* 380m470 */
