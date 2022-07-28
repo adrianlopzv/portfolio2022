@@ -516,8 +516,6 @@ article .section__container-img {
     align-self: flex-start;
 }
 
-/* REVISAR ALTOS DE IMG PORQUE ME EMPUJA EL CONTENIDOOOOO */
-
 .projects__section-tags {
     width: 90%;
     height: 15%;
@@ -544,26 +542,108 @@ article .section__container-img {
  }
 
 
-/* 380m470 */
 
+/* CONTACT SECTION */
 
-
-/* //////// */
-
-.another-section {
+.contact__section {
     display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
-    padding: 50px 60px 20px 60px;
-    background-color: cadetblue;
+    padding-top: 20px;
+    background-color: var(--almost-black);
+    position: relative;
 }
 
-.another-section h1 {
+.contact__container-main {
+    height: 80vh;
+    margin: auto 60px 0;
+    padding: 0 60px 10px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.contact__container-main div {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: var(--tiny-grey);
+}
+
+.contact__container-main .contact__container-sayhi {
+    height: 100%;
+    width: 50%;
+}
+
+.contact__container-main .contact__container-form {
+    height: 100%;
+    width: 50%;
+}
+
+.contact__container-main div > h1 {
+    color: var(--tiny-grey);
+    font-size: 5.8rem;
+    font-weight: 700;
+    font-weight: 8rem;
+}
+
+.contact__container-main div > h4 {
     font-size: 3rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+    margin-top: 28px;
 }
 
+.contact__container-main div > form {
+    display: flex;
+    flex-direction: column;
+}
 
+section .contact__footer-main {
+    position: absolute;
+    display: inline-grid;
+    height: 70px;
+    width: 100vw;
+    padding: 0 60px;
+    background-color: var(--great-yellow);
+    color: var(--almost-black);
+    font-family: inherit;
+    bottom: 0;
+}
+
+.contact__footer-main div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__footer-main div p {
+    font-size: small;
+}
+
+.contact__footer-main div ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact__footer-main div ul li {
+    list-style: none;
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.contact__footer-main div ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact__footer-main div ul a:hover {
+    text-decoration: underline;
+}
 
 @media screen and (max-width: 1200px) {
     header .header__section-info {
