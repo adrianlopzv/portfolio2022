@@ -641,6 +641,11 @@ article .section__container-img {
     transition: all 0.15s ease;
   }
 
+  .mail-input .valid {
+    color: var(--great-yellow);
+    box-shadow: inset 0 -2px 0 var(--great-yellow)
+  }
+
   .mail-input input:focus {
     background: none;
     outline: none;
@@ -650,6 +655,7 @@ article .section__container-img {
   .mail-input input:focus + .label {
     color: var(--great-yellow);
   } 
+
 
   form .message-textarea {
     display: flex;

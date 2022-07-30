@@ -16,3 +16,16 @@ const observer = new IntersectionObserver( entries => {
 }, options)
 
 observer.observe(header)
+
+validate = () => {
+    const input = document.getElementById("mail-input")
+    const email = document.getElementById("mail-input").value
+    const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+    
+    if(email.match(pattern)) {
+        input.classList.add('valid')
+    } else {
+        input.classList.remove('valid')
+    }
+
+}
