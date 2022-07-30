@@ -149,14 +149,15 @@
             <h4>If you want to get in touch with me, please send me a message.</h4>
         </div>
         <div class="contact__container-form">
-            <form action="">
+            <form action="https://formspree.io/f/mrgjwdzy" method="POST">
                 <label class="mail-input" for="mail-input">
-                    <input placeholder="your@email.com" id="mail-input" type="email">
+                    <input name="email" placeholder="your@email.com" id="mail-input" type="email" required>
                     <span class="label">Email</span>
-                    <span class="focus-bg"></span>
                 </label>
-                <!-- <imput placeholder="your@email.com"></imput> -->
-                <texarea placeholder="What's on your mind?"></texarea>
+                <label class="message-textarea" for="message-textarea">
+                    <textarea name="message" placeholder="What's on your mind?" id="message-textarea" required></textarea>
+                    <span class="message">Message</span>
+                </label>
                 <button class="section-button-send" type="submit">Send</button>
             </form>
         </div>

@@ -606,7 +606,6 @@ article .section__container-img {
     margin: auto;
     width: 100%;
     max-width: 80%;
-    border-radius: 3px;
     overflow: hidden;
     color: var(--tiny-grey);
 }
@@ -615,82 +614,104 @@ article .section__container-img {
     position: absolute;
     top: 20px;
     left: 12px;
-    font-size: 2.8rem;
+    font-size: 3rem;
     color: var(--tiny-grey);
     font-weight: 500;
     transform-origin: 0 0;
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, -20px, 0) scale(0.75);
     transition: all 0.2s ease;
     pointer-events: none;
   }
 
-  .mail-input .focus-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--almost-black);
-    z-index: -1;
-    transform: scaleX(0);
-    transform-origin: left;
-  }
-  
   .mail-input input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    opacity: 0;
+    opacity: 1;
     width: 100%;
     border: 0;
     font-family: inherit;
-    padding: 16px 12px 0 12px;
-    height: 56px;
-    font-size: 16px;
+    padding: 20px 12px 0px 12px;
+    height: 74px;
+    font-size: 1.8rem;
     font-weight: 400;
+    box-shadow: inset 0 -2px 0 var(--tiny-grey);
     background: var(--almost-black);
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
     color: var(--tiny-grey);
     transition: all 0.15s ease;
   }
-  
-  .mail-input input:not(:-moz-placeholder-shown) + .label {
-    color: var(--tiny-grey);
-    transform: translate3d(0, -12px, 0) scale(0.75);
-  }
-  
-  .mail-input input:not(:-ms-input-placeholder) + .label {
-    color: var(--tiny-grey);
-    transform: translate3d(0, -12px, 0) scale(0.75);
-  }
-  
-  .mail-input input:not(:placeholder-shown) + .label {
-    color: var(--very-dark-grey);
-    transform: translate3d(0, -12px, 0) scale(0.75);
-  }
-  
+
   .mail-input input:focus {
     background: none;
     outline: none;
-    opacity: 1;
     box-shadow: inset 0 -2px 0 var(--great-yellow);
   }
   
   .mail-input input:focus + .label {
     color: var(--great-yellow);
-    transform: translate3d(0, -12px, 0) scale(0.75);
-  }
-  
-  .mail-input input:focus + .label + .focus-bg {
-    transform: scaleX(1);
-    transition: all 0.1s ease;
+  } 
+
+  form .message-textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
   }
 
+  form .message {
+    position: absolute;
+    transform-origin: 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Oxygen', sans-serif;
+    margin-left: 60px;
+    margin-top: 30px;
+    padding-left: 12px;
+    transition: all 0.2s ease;
+    transform: translate3d(0, 0px, 0) scale(0.75);
+  }
+
+  .message-textarea textarea {
+    background-color: var(--almost-black);
+    color: var(--tiny-grey);
+    padding: 16px;
+    border: 2px solid var(--tiny-grey);
+    outline: none;
+    margin: 70px auto 0;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    width: 80%;
+    height: 190px;
+    transition: all 0.2;
+    resize: none;
+  }
+
+  .message-textarea .contact__container-textarea:hover {
+    cursor: text;
+  }
+
+  .message-textarea textarea:focus {
+    border: 2px solid var(--great-yellow);
+  }
+
+  .message-textarea textarea:focus + .message {
+    color: var(--great-yellow);
+  }
+
+
+/* //////////BUTON DESDE ACA/////////////////// */
   
+
 .contact__container-form button {
     align-self: flex-end;
     width: 100px;
-    margin-top: 60px;
+    margin: 25px 58px 0 0;
     padding: 15px 0;
     background: var(--great-yellow);
     outline: none !important;
