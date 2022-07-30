@@ -175,6 +175,11 @@ header .header__section-info p {
     z-index: 1;
     color: var(--tiny-grey);
   }
+
+  .section-button a {
+    text-decoration: none;
+    color: inherit;
+  }
   
   .section-button:after {
     position: absolute;
@@ -328,6 +333,7 @@ header .header__section-info p {
 .about__container-right p{
     color: var(--tiny-grey);
     margin-top: 20px;
+    line-height: 2.6rem;
 }
 
 .section-blurcircle--about{
