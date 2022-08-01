@@ -27,10 +27,9 @@
     <header class="header__container-home" id="home">
         <section class="header__section-info">
             <h1>Frontend Developer</h1><p>I'm a critical thinker with an open mind, <br>a communicator and a facilitator.</p>
-            <button class="section-button"><a href="#contact">
+            <a href="#contact"><button class="section-button" type="bu">
                 Let's talk
-                </a>
-            </button>
+            </button></a>
         </section>
         <section class="header__section-bigphoto">
             <div class="section-blurcircle">
@@ -141,7 +140,6 @@
         </div>
     </section>
 
-
     <!-- SECTION CONTACT -->
     <section class="contact__section" id="contact">
     <div class="contact__container-main">
@@ -156,10 +154,11 @@
                     <span class="label" id="span-input">Email</span>
                 </label>
                 <label class="message-textarea" for="message-textarea">
-                    <textarea name="message" placeholder="What's on your mind?" id="message-textarea" required></textarea>
+                    <textarea name="message" onkeyup="validatext(),valida_length()" onkeydown="valida_length()" placeholder="What's on your mind?" id="message-textarea" required></textarea>
                     <span class="message">Message</span>
+                    <input type="text" name="characters" size="1" id="input-count" readonly>
                 </label>
-                <button class="section-button-send" type="submit">Send</button>
+                <button class="section-button-send" type="submit" id="valid-button">Send</button>
             </form>
         </div>
     </div>

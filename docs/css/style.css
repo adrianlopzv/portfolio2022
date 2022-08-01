@@ -643,12 +643,16 @@ article .section__container-img {
     font-weight: 400;
     box-shadow: inset 0 -2px 0 var(--tiny-grey);
     background: var(--almost-black);
-    color: var(--tiny-grey);
+    color: var(--dark-grey);
     transition: all 0.15s ease;
   }
 
-  .mail-input .valid {
+  form .mail-input .valid-span {
     color: var(--great-yellow);
+  }
+
+  .mail-input .valid {
+    color: var(--tiny-grey);
     box-shadow: inset 0 -2px 0 var(--great-yellow)
   }
 
@@ -687,6 +691,23 @@ article .section__container-img {
     transform: translate3d(0, 0px, 0) scale(0.75);
   }
 
+  .message-textarea input {
+    align-self: flex-end;
+    padding-top: 5px;
+    margin-bottom: 0;
+    margin-right: 60px;
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: var(--very-dark-grey);
+    background-color: none;
+    background: transparent;
+    border: none;
+  }
+
+  .message-textarea .limit-character {
+    color: #f16050;
+  }
+
   .message-textarea textarea {
     background-color: var(--almost-black);
     color: var(--tiny-grey);
@@ -699,9 +720,13 @@ article .section__container-img {
     font-size: 1.8rem;
     line-height: 2.6rem;
     width: 80%;
-    height: 190px;
+    height: 180px;
     transition: all 0.2;
     resize: none;
+  }
+
+  .message-textarea .valid-text {
+    border: 2px solid var(--great-yellow);
   }
 
   .message-textarea .contact__container-textarea:hover {
@@ -723,11 +748,11 @@ article .section__container-img {
 .contact__container-form button {
     align-self: flex-end;
     width: 100px;
-    margin: 25px 58px 0 0;
+    margin: 20px 58px 0 0;
     padding: 15px 0;
-    background: var(--great-yellow);
+    background: var(--tiny-grey);
     outline: none !important;
-    cursor: pointer;
+    cursor: not-allowed;
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
@@ -735,6 +760,11 @@ article .section__container-img {
     font-family: var(--roboto);
     letter-spacing: 2px;
     font-weight: bold;
+  }
+
+  .contact__container-form .button-ok {
+    background: var(--great-yellow);
+    cursor: pointer;
   }
 
   .section-button-send {
@@ -755,15 +785,15 @@ article .section__container-img {
     transition: all 0.3s ease;
   }
   
-  .section-button-send:hover {
+  .button-ok:hover {
     color: var(--tiny-grey);
   }
   
-  .section-button-send:hover:after {
+  .button-ok:hover:after {
     top: auto;
     bottom: 0;
     height: 100%;
-    border: 2px solid var(--tiny-grey);
+    border: 2px solid var(--great-yellow);
   }
 
 
