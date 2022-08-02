@@ -34,13 +34,14 @@ validate = () => {
 }
 
 textarea_content = ""
-character_limit = 10
+character_limit = 240
 
 valida_length = () => {
     
     num_characters = document.getElementById("message-textarea").value.length
     const colorCount = document.getElementById("input-count")
     const button = document.getElementById("valid-button")
+    const input2 = document.getElementById("input-count2")
 
     if (num_characters <= character_limit) {
         textarea_content = document.getElementById("message-textarea").value
@@ -57,6 +58,7 @@ valida_length = () => {
     }
 
     count()
+    input2.classList.add("limit-value-view")
 }
 
 count = () => {
@@ -64,7 +66,6 @@ count = () => {
 }
 
 validatext = () => {
-    // const button = document.getElementById("valid-button")
     const textValid = document.getElementById("message-textarea")
     const textarea = document.getElementById("message-textarea").value
     const textPatern = /[A-Za-zÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿ][0-9]*$/

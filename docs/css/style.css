@@ -695,14 +695,38 @@ article .section__container-img {
     align-self: flex-end;
     padding-top: 5px;
     margin-bottom: 0;
-    margin-right: 60px;
     font-size: 1.5rem;
     font-family: inherit;
     color: var(--very-dark-grey);
     background-color: none;
     background: transparent;
     border: none;
+    width: auto;
   }
+
+  .message-textarea input:focus {
+    outline-width: 0;
+  }
+
+  .message-textarea .limit-value {
+    align-self: flex-end;
+    opacity: 0;
+  }
+
+  .message-textarea .limit-value-view {
+    opacity: 1;
+  }
+
+
+  #textcount-container {
+    width: 45px;
+    height: auto;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+  }
+
 
   .message-textarea .limit-character {
     color: #f16050;
@@ -740,6 +764,8 @@ article .section__container-img {
   .message-textarea textarea:focus + .message {
     color: var(--great-yellow);
   }
+
+
 
 
 /* //////////BUTON DESDE ACA/////////////////// */

@@ -156,7 +156,10 @@
                 <label class="message-textarea" for="message-textarea">
                     <textarea name="message" onkeyup="validatext(),valida_length()" onkeydown="valida_length()" placeholder="What's on your mind?" id="message-textarea" required></textarea>
                     <span class="message">Message</span>
-                    <input type="text" name="characters" size="1" id="input-count" readonly>
+                    <div id="textcount-container">
+                        <input type="text" name="characters" size="2"  id="input-count" readonly>
+                        <input type="text" size="3" value="/ 240" class="limit-value" id="input-count2" readonly>
+                    </div>
                 </label>
                 <button class="section-button-send" type="submit" id="valid-button">Send</button>
             </form>
