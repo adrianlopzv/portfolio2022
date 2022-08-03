@@ -59,6 +59,7 @@ valida_length = () => {
 
     count()
     input2.classList.add("limit-value-view")
+    document.getElementById("valid-button").disabled = false
 }
 
 count = () => {
