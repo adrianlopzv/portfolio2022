@@ -1004,4 +1004,7 @@ section .contact__footer-main {
     .contact__container-main div > h1 {
         font-size: 5.6rem;
     }
+    .message-textarea textarea {
+        height: 150px;
+    }
 }
