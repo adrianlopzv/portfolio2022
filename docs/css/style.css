@@ -588,7 +588,7 @@ article .section__container-img {
     color: var(--tiny-grey);
     font-size: 5.8rem;
     font-weight: 700;
-    font-weight: 8rem;
+    font-weight: bold;
 }
 
 .contact__container-main div > h4 {
@@ -916,14 +916,29 @@ section .contact__footer-main {
     .projects__section {
         padding: 40px 20px 20px;
     }
+    .projects__section-title h1 {
+        font-size: 4.6rem;
+    }
     .projects__section-title {
         margin-top: 40px;
         margin-left: 40px;
         padding-right: 5px;
     }
     .contact__container-main {
-        margin: auto 40px 10px;
+        margin: 60px 40px 10px;
         padding: 0 40px 10px;
+    }
+    .contact__container-form button {
+       margin: 12px 50px 0 0; 
+       width: 90px;
+    }
+    .message-textarea textarea {
+        margin-top: 65px;
+        height: 155px;
+        font-size: 1.6rem;
+    }
+    form .message {
+        margin-left: 50px;
     }
 }
 
@@ -962,5 +977,31 @@ section .contact__footer-main {
     .about__container-left {
         width: 50%;
         padding-left: 25px;
+    }
+    .projects__section-title h1 {
+        font-size: 4.4rem;
+    }
+    .projects__section-title {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .contact__container-main {
+        margin: 60px 20px 10px;
+        padding: 0 40px 10px;
+    }
+    .contact__container-main {
+        margin-right: 10px;
+        padding-right: 20px;
+    }
+    .contact__container-main div {
+        padding-right: 10px;
+    }
+    .contact__container-main div > h4 {
+        margin-top: 16px;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+    }
+    .contact__container-main div > h1 {
+        font-size: 5.6rem;
     }
 }
