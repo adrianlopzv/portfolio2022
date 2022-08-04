@@ -19,15 +19,17 @@
 html {
     font-size: 62.5%;
     font-family: 'Oxygen', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body{
     background-color: var(--tiny-grey);
     color: var(--almost-black);
+    max-width: 100%;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    /* min-height: 100vh; */
  }
 
  ::-webkit-scrollbar {
@@ -169,7 +171,7 @@ header .header__section-info p {
     letter-spacing: 2px;
     font-weight: bold;
   }
-  
+
   .section-button {
     border: none;
     z-index: 1;
@@ -180,7 +182,7 @@ header .header__section-info p {
     text-decoration: none;
     color: inherit;
   }
-  
+
   .section-button:after {
     position: absolute;
     content: "";
@@ -192,11 +194,11 @@ header .header__section-info p {
     background: var(--great-yellow);
     transition: all 0.3s ease;
   }
-  
+
   .section-button:hover {
     color: var(--almost-black);
   }
-  
+
   .section-button:hover:after {
     top: auto;
     bottom: 0;
@@ -209,15 +211,17 @@ header .header__section-info p {
     justify-content: flex-start;
     align-items:flex-end;
     width: 50%;
+    overflow-y: visible;
     /* background-color: burlywood; */
   }
 
 
   .header__section-bigphoto img {
-    width: 490px; height: 490px;
+    max-width: 500px; height: auto;
     position: absolute;
     padding: 0 10px;
     margin-top: 10px;
+    object-fit: contain;
   }
 
   .section-blurcircle {
@@ -225,7 +229,7 @@ header .header__section-info p {
     transform: translate(-15%, 12%);
     width: 650px;
     height: 550px;
-    border-radius: 60% 25% 40% 80%;  
+    border-radius: 60% 25% 40% 80%;
     filter: blur(40px);
     background: radial-gradient(circle at 50% 50%,rgb(245, 255, 105), rgba(76, 0, 255, 0));
     opacity: 1.2;
@@ -341,7 +345,7 @@ header .header__section-info p {
     transform: translate(-20%, 90%);
     width: 480px;
     height: 400px;
-    border-radius: 60% 25% 40% 80%;  
+    border-radius: 60% 25% 40% 80%;
     filter: blur(40px);
     background: radial-gradient(circle at 50% 50%,rgb(245, 255, 105), rgba(76, 0, 255, 0));
     opacity: 0.9;
@@ -362,7 +366,7 @@ header .header__section-info p {
 .projects__section-title {
     display: flex;
     justify-content: left;
-    width: 35%;
+    width: 50%;
     margin-top: 40px;
     margin-left: 60px;
     padding-right: 15px;
@@ -375,7 +379,7 @@ header .header__section-info p {
 
 .projects__section-container {
     width: 100%;
-    padding: 30px 60px 10px;
+    padding: 10px 20px 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -387,7 +391,7 @@ header .header__section-info p {
     width: 300px;
     height: 350px;
     margin: 0 20px;
-    margin-top: 10px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -661,10 +665,10 @@ article .section__container-img {
     outline: none;
     box-shadow: inset 0 -2px 0 var(--great-yellow);
   }
-  
+
   .mail-input input:focus + .label {
     color: var(--great-yellow);
-  } 
+  }
 
 
   form .message-textarea {
@@ -770,7 +774,7 @@ article .section__container-img {
 
 
 /* //////////BUTON DESDE ACA/////////////////// */
-  
+
 
 .contact__container-form button {
     align-self: flex-end;
@@ -799,7 +803,7 @@ article .section__container-img {
     z-index: 1;
     color: var(--almost-black);
   }
-  
+
   .section-button-send:after {
     position: absolute;
     content: "";
@@ -811,11 +815,11 @@ article .section__container-img {
     background: var(--almost-black);
     transition: all 0.3s ease;
   }
-  
+
   .button-ok:hover {
     color: var(--tiny-grey);
   }
-  
+
   .button-ok:hover:after {
     top: auto;
     bottom: 0;
@@ -877,12 +881,15 @@ section .contact__footer-main {
     header .header__section-info {
         padding-top: 80px;
         padding-left: 60px;
-    } 
+    }
     .header__section-bigphoto img {
-        width: 450px; height: 450px;
-    }  
+        max-width: 470px; height: auto;
+    }    
     .section-blurcircle {
         width: 600px; height: 500px;
+    }
+    .header__footer {
+        padding: 0 40px;
     }
     .about__container-left {
         padding-left: 30px;
@@ -896,5 +903,49 @@ section .contact__footer-main {
     }
     .about__container-left h2 {
         font-size: 4.4rem;
+    }
+    .about__section .about__container-info {
+        margin: 0 20px;
+    }
+    .about__container-right {
+        padding: 0px 30px 0px 40px;
+    }
+    .projects__section {
+        padding: 40px 20px 20px;
+    }
+    .projects__section-title {
+        margin-top: 40px;
+        margin-left: 40px;
+        padding-right: 5px;
+    }
+    .contact__container-main {
+        margin: auto 40px 10px;
+        padding: 0 40px 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav .nav__navbar {
+        margin: auto 40px;
+    }
+    header .header__section-info {
+        padding-top: 90px;
+        padding-left: 40px;
+    }
+    header .header__section-info h1 {
+        font-size: 4.8rem;
+        line-height: 5rem;
+    }
+    header .header__section-info p {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+    .section-blurcircle {
+        width: 500px; height: 500px;
+        transform: translate(-18%, 10%);
+    }
+    .header__section-bigphoto img{
+        max-width: 440px; height: auto;
+        transform: translate(-10%, -5%);
     }
 }
