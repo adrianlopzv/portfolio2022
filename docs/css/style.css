@@ -898,6 +898,9 @@ section .contact__footer-main {
         font-size: 1.5rem;
         padding: 0 50px 0 60px;
     }
+    .about__container-right p{
+        line-height: 2.3rem;
+    }
     .about__container-left h1{
         font-size: 5rem;
     }
@@ -947,5 +950,17 @@ section .contact__footer-main {
     .header__section-bigphoto img{
         max-width: 440px; height: auto;
         transform: translate(-10%, -5%);
+    }
+    .about__container-right {
+        padding: 0px 15px 0px 25px;
+        font-size: 1.4rem;
+        width: 50%;
+    }
+    .about__container-right p{
+        line-height: 2.2rem;
+    }
+    .about__container-left {
+        width: 50%;
+        padding-left: 25px;
     }
 }
