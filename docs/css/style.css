@@ -832,8 +832,7 @@ article .section__container-img {
 
 /* FOOTER */
 
-section .contact__footer-main {
-    position: absolute;
+body .contact__footer-main {
     display: inline-grid;
     height: 70px;
     width: 100vw;

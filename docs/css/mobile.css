@@ -86,6 +86,59 @@ header .header__section-info p {
     height: 80px;
 }
 
+.projects__section-title {
+    width: 350px;
+}
+
+.projects__section-title h1 {
+    font-size: 4rem;
+    margin-top: 25px;
+    width: 350px;
+}
+
+.contact__container-main {
+    flex-direction: column;
+    height: auto;
+    margin: 40px 0px 0px;
+    padding: 5px 0px 10px;
+}
+
+.contact__container-sayhi {
+    margin-bottom: 60px;
+}
+
+.contact__container-main div > h4 {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    margin-top: 5px;
+    padding: 0 10px;
+}
+
+.contact__container-main .contact__container-sayhi {
+    width: 65%;
+}
+
+.contact__container-main .contact__container-form {
+    width: 80%;
+}
+
+.message-textarea textarea {
+    height: 180px;
+}
+
+form .message {
+    margin-left: 60px;
+}
+
+.contact__container-form button {
+    margin: 20px 60px 40px 0;
+}
+
+.contact__footer-main div ul li {
+    margin-left: 30px;
+}
+
+
 @media screen and  (max-width: 645px){
     .header__section-bigphoto img {
         width: 55%;
