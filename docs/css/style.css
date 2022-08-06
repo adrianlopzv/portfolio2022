@@ -36,55 +36,53 @@ body{
     display: none;
 }
 
-nav {
-    display: inline-grid;
-    width: 100vw;
+body .nav__navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 60px;
     height: 10vh;
+    width: 100%;
     position: fixed;
     z-index: 10;
     transition: 150ms ease-in-out;
     background-color: rgb(238, 234, 234, 0.74);
 }
 
-.change-navbar {
+
+body .change-navbar {
     background-color: var(--almost-black);
     height: 8vh;
 }
 
-.change-navbar .nav__navbar .nav__navbar-title {
+body .change-navbar a {
     color: var(--tiny-grey);
     font-size: 1.8rem;
 }
 
-.change-navbar .nav__navbar .nav__navbar-sections li a {
+.change-navbar .nav__navbar-sections li a {
     color: var(--tiny-grey);
 }
 
-.change-navbar div ul li .navbar__section-effect::before {
+.change-navbar ul li .navbar__section-effect::before {
     background-color: var(--tiny-grey);
 }
 
-nav .nav__navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto 60px;
-    height: auto;
-}
-
-.nav__navbar .nav__navbar-title {
+.nav__navbar a {
     font-size: 2rem;
     font-style: normal;
     line-height: 40px;
-}
-
-.nav__navbar .nav__navbar-title a {
     text-decoration: none;
     color: inherit;
 }
 
-nav div .nav__navbar-sections {
+.nav__navbar a span {
+    font-weight: 700;
+}
+
+nav .nav__navbar-sections {
     display: flex;
     flex-direction: row;
     list-style: none;
