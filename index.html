@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adrian López | Portfolio 2022 </title>
+    <link rel="icon" href="./docs/assets/favicon-portfolio.png" type="image/x-icon">
     <link rel="stylesheet" href="./docs/css/style.css">
     <link rel="stylesheet" href="./docs/css/mobile.css" media="(max-width: 860px)">
     <script src="./app.js" defer></script>
@@ -15,12 +16,17 @@
 <body>
 <!-- nav -->
     <nav class="nav__navbar">
-            <a href="#home"><span>Adrian</span>Lopez</a>
+            <a href="#home" class="a-logo"><span>Adrian</span>Lopez</a>
             <ul class="nav__navbar-sections">
-                <li><a class="navbar__section-effect" href="#about">About</a></li>
-                <li><a class="navbar__section-effect" href="#projects">Projects</a></li>
-                <li><a class="navbar__section-effect" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="navbar__section-effect navbar__link" href="#about">About</a></li>
+                <li class="nav-item"><a class="navbar__section-effect navbar__link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="navbar__section-effect navbar__link" href="#contact">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
     </nav>
 <!-- Home -->
     <header class="header__container-home" id="home">

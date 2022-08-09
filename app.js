@@ -1,5 +1,24 @@
 const nav = document.querySelector('nav');
 const header = document.querySelector('header');
+const hamburger = document.querySelector(".hamburger")
+const navMenu = document.querySelector(".nav__navbar-sections")
+const adLopez = document.querySelector(".a-logo")
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active")
+    navMenu.classList.toggle("active")
+}) 
+
+document.querySelectorAll(".navbar__link","a-logo")
+.forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active")
+    navMenu.classList.remove("active")
+}))
+
+adLopez.addEventListener("click", () => {
+    hamburger.classList.remove("active")
+    navMenu.classList.remove("active")
+})
 
 const options = {
     rootMargin: '-10px'

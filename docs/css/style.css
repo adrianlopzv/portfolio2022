@@ -70,6 +70,11 @@ body .change-navbar a {
     background-color: var(--tiny-grey);
 }
 
+.change-navbar .nav__navbar-sections {
+    background-color: var(--almost-black);
+}
+
+
 .nav__navbar a {
     font-size: 2rem;
     font-style: normal;
@@ -86,7 +91,6 @@ nav .nav__navbar-sections {
     display: flex;
     flex-direction: row;
     list-style: none;
-    text-decoration: none;
 }
 
 nav .nav__navbar-sections li a {
@@ -118,6 +122,10 @@ ul li .navbar__section-effect:hover::before {
     width: 100%;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
 
 /* HOME - HEADER  */
 
@@ -343,9 +351,9 @@ header .header__section-info p {
 
 .section-blurcircle--about{
     position: relative;
-    transform: translate(-20%, 90%);
+    transform: translate(-5%, 90%);
     width: 480px;
-    height: 400px;
+    height: 460px;
     border-radius: 60% 25% 40% 80%;
     filter: blur(40px);
     background: radial-gradient(circle at 50% 50%,rgb(245, 255, 105), rgba(76, 0, 255, 0));
@@ -380,6 +388,7 @@ header .header__section-info p {
 
 .projects__section-container {
     width: 100%;
+    max-width: 1350px;
     padding: 10px 20px 10px;
     display: flex;
     flex-direction: row;
@@ -686,14 +695,14 @@ article .section__container-img {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 500;
     font-family: 'Oxygen', sans-serif;
     margin-left: 60px;
     margin-top: 30px;
     padding-left: 12px;
     transition: all 0.2s ease;
-    transform: translate3d(0, 0px, 0) scale(0.75);
+    /* transform: translate3d(0, 0px, 0) scale(0.75); */
   }
 
   .message-textarea input {
