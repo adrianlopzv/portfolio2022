@@ -138,7 +138,9 @@ header .header__section-info {
     height: 100%;
     padding-top: 60px;
     padding-left: 100px;
+    
 }
+
 
 header .header__section-info h1 {
     font-style: normal;
@@ -224,9 +226,9 @@ header .header__section-info p {
 
   .section-blurcircle {
     position: relative;
-    transform: translate(-15%, 12%);
+    transform: translate(-16%, 15%);
     width: 650px;
-    height: 550px;
+    height: 650px;
     border-radius: 60% 25% 40% 80%;
     filter: blur(40px);
     background: radial-gradient(circle at 50% 50%,rgb(245, 255, 105), rgba(76, 0, 255, 0));
