@@ -132,7 +132,7 @@ ul li .navbar__section-effect:hover::before {
 .header__container-home {
     display: flex;
     flex-direction: row;
-    height: calc(100vh - 80px);
+    height: 90vh;
     width: 100%;
     margin: auto 0px;
 }
