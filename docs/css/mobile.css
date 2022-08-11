@@ -106,6 +106,10 @@ header .header__section-info p {
     height: 80px;
 }
 
+.active div {
+    opacity: 1;
+}
+
 .projects__section-title {
     width: 350px;
 }
@@ -114,6 +118,10 @@ header .header__section-info p {
     font-size: 4rem;
     margin-top: 25px;
     width: 350px;
+}
+
+.container__img-text div {
+    justify-content: flex-start;
 }
 
 .contact__container-main {
