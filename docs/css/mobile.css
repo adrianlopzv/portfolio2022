@@ -7,6 +7,10 @@ nav .nav__navbar-sections li a {
     font-size: 1.3rem4;
 }
 
+body .nav__navbar {
+    padding: 20px 40px;
+}
+
 /* Hambur Menu */
 
 
@@ -198,12 +202,17 @@ form .message {
         left: 0;
     }
 
-    .header__section-info {
+    header .header__section-info {
         padding-left: 20px;
     }
 
     .header__section-bigphoto img {
-        width: 55%;
+        width: 62%;
+        transform: translate(-20%, 12%);
+    }
+
+    .header__footer {
+        height: 70px;
     }
 
     .about__container-left {
