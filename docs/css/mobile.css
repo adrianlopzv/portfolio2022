@@ -44,7 +44,7 @@ header .header__section-info p {
 }
 
 .header__section-bigphoto img {
-    transform: translate(-20%, -2%);
+    transform: translate(-15%, 5%);
     max-width: none;
     width: 50%;
 }
@@ -202,6 +202,11 @@ form .message {
         left: 0;
     }
 
+    nav .nav__navbar-sections li a {
+        margin-left: 0;
+        font-size: 2rem;
+    }
+
     header .header__section-info {
         padding: 0px 20px;
         width: 100%;
@@ -223,6 +228,8 @@ form .message {
     .header__section-bigphoto img {
         width: 62%;
         transform: translate(4%, 12%);
+        padding: 0;
+        margin-top: 0;
     }
 
     .section-blurcircle {
@@ -244,11 +251,61 @@ form .message {
         margin-left: 35px;
     }
 
+    .about__section .about__container-info {
+        width: 90vw;
+    }
+
     .about__container-left {
-        width: 85%;
+        width: 90%;
+        padding: 0 10px;
     }
 
     .about__container-right {
-        width: 85%;
+        width: 90%;
+        font-size: 1.6rem;
+        padding: 0px 20px;
+    }
+
+    .contact__container-main .contact__container-sayhi {
+        width: 80%;
+    }
+
+    .contact__container-main div {
+        padding-right: 0;
+    }
+
+    .contact__container-sayhi {
+        margin-bottom: 75px;
+    }
+
+    .contact__container-main div > h4 {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        margin-top: 10px;
+    }
+
+    .contact__container-main .contact__container-form {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    body .contact__footer-main {
+        padding: 5px 10px 0px;
+        height: 90px;
+    }
+
+    .contact__footer-main div {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contact__footer-main div ul li {
+        margin-left: 0;
+    }
+
+    .contact__footer-main div ul {
+        width: 100%;
+        justify-content: space-evenly;
     }
 }

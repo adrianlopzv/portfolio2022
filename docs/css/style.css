@@ -230,6 +230,7 @@ header .header__section-info p {
     padding: 0 10px;
     margin-top: 10px;
     object-fit: contain;
+    transform: translate(-10px, 5px)
   }
 
   .section-blurcircle {
@@ -976,7 +977,7 @@ body .contact__footer-main {
     }
     .header__section-bigphoto img{
         max-width: 440px; height: auto;
-        transform: translate(-10%, -5%);
+        transform: translate(-10%, 1%);
     }
     .about__container-right {
         padding: 0px 15px 0px 25px;
