@@ -203,16 +203,45 @@ form .message {
     }
 
     header .header__section-info {
-        padding-left: 20px;
+        padding: 0px 20px;
+        width: 100%;
+        height: 80%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .header__section-bigphoto {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: 20%;
+        align-content: center;
     }
 
     .header__section-bigphoto img {
         width: 62%;
-        transform: translate(-20%, 12%);
+        transform: translate(4%, 12%);
+    }
+
+    .section-blurcircle {
+        width: 500px; height: 500px;
+        transform: translate(1%, -25%);
+    }
+
+    .header__container-home {
+        flex-direction: column;
+        align-items: center;
     }
 
     .header__footer {
-        height: 70px;
+        height: 80px;
+        padding: 0 30px;
+    }
+
+    .footer__icon-container span {
+        margin-left: 35px;
     }
 
     .about__container-left {
