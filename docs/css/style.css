@@ -70,15 +70,11 @@ body .change-navbar a {
     background-color: var(--tiny-grey);
 }
 
-.change-navbar .nav__navbar-sections {
-    background-color: var(--almost-black);
-}
-
 
 .nav__navbar a {
     font-size: 2rem;
     font-style: normal;
-    line-height: 40px;
+    line-height: 20px;
     text-decoration: none;
     color: inherit;
 }

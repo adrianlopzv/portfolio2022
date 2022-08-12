@@ -215,6 +215,10 @@ form .message {
         font-size: 2rem;
     }
 
+    .change-navbar .nav__navbar-sections {
+        background-color: var(--almost-black);
+    }
+
     header .header__section-info {
         padding: 0px 20px;
         width: 100%;
