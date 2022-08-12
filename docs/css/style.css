@@ -476,7 +476,6 @@ article .section__container-img {
 
 
 .container__img-text button {
-    /* margin-top: 60px; */
     padding: 10px 10px;
     border: none;
     background: var(--great-yellow);
@@ -500,7 +499,7 @@ article .section__container-img {
 }
 
 .container__img-text div>a {
-    margin-right: 20px;
+    /* margin-right: 20px; */
     text-decoration: none;
     text-transform: uppercase;
     color: var(--just-white);
@@ -510,6 +509,10 @@ article .section__container-img {
     font-size: small;
     line-height: 2rem;
     letter-spacing: 0.1em;
+}
+
+div .container__img-offbutton {
+    margin-right: 20px;
 }
 
 .container__img-text div>a:hover {
