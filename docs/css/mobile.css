@@ -169,6 +169,9 @@ form .message {
 
 
 @media screen and  (max-width: 645px){
+    ::-webkit-scrollbar {
+        display: none;
+    }
     .hamburger {
         display: block;
     }

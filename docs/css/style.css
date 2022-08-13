@@ -32,8 +32,18 @@ body{
     flex-direction: column;
  }
 
- ::-webkit-scrollbar {
-    display: none;
+::-webkit-scrollbar {
+    width: 9px;
+}
+::-webkit-scrollbar-track {
+    background: var(--tiny-grey); 
+ }
+   
+::-webkit-scrollbar-thumb {
+    background: var(--tag-grey); 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--almost-black); 
 }
 
 body .nav__navbar{
